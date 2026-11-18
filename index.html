@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html>
-<body style=" background-image: url('https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TeO65bvlO8zGWdnG93ZCqN2M0Udw5hmjFCMSXUTdstMg-3mqfRoktwZ8rayufQW6_37Jpo_7TlMmik5d8urFpEGATvP94HwmrhEB0O9Ob1E6pqTXDwgAnUCiywVeUroY2Cu9ZNhw=s680-w680-h510-rw');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;">
-<h1 style="text-align:center;background-color:white;font-family:Courier"> Hello! </h1>
-<p style="color:white;font-size:150%;background-color:black;"> <b>This is my portfolio.</b> </p>
-<a href="https://www.w3schools.com" target="_self" style="background-color:white;font-size:150%;font-family:courier"> Home </a>
-<p style="font-family:courier;font-size:150%;text-align:center;background-color:white;"> Here's what I learned about HTML code. </p>
-<ul style="background-color:lightgrey;">
-<li> <b> Bold letters </b> </li>
-<li> <i> Italic letters </i> </li>
-<li> <mark> Highlights <mark> </li>
-<li style="font-family:verdana;"> Different fonts </li>
-<li style="font-size:75%;"> Font size </li>
-<li style="text-align:center;"> Alignment of text </li>
-<li style="color:slateblue;"> Font colour </li>
+<head>
+<style>
+header {
+background-color: #ffffff99;
+border: 1px solid #000000;
+font-family: Verdana;
+text-align: center;
+}
+ul.topnav {
+display:flex;
+list-style-type:none;
+margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+border: 1px solid black;
+}
+ul.topnav li a {
+display:block;
+color: #000000;
+padding:14px 16px;
+text-decoration: none;
+}
+ul.topnav li a:hover {
+background-color: #000000;
+color: white;
+}
+div.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+div.gallery-item {
+margin: 5px;
+border: 2px solid #000000;
+width: 200px;
+background-color: #ffffff;
+}
+div.gallery-item:hover {
+border: 2px solid #ffffff;
+}
+div.gallery-item img {
+width: 100%;
+height: auto;
+}
+div.gallery-item div.desc {
+padding: 15px;
+text-align: center;
+background-color: #ffffff
+}
+body {
+background-color: tomato;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ } 
+ p {
+ font-family: Arial;
+ background-color: white;
+ color: black;
+ }
+ </style>
+</head>
+<body>
+<header>
+<h1> BirdsOfOntario </h1>
+</header>
+<ul class="topnav">
+<li> <a href="#"> Home </a></li>
+<li> <a href="#"> Birds </a></li>
+<li> <a href="#"> About </a></li>
 </ul>
-<p style="color:white;"> Pretty cool right?
-<h2 style="background-color:white;font-family:Courier;"> Here's an image: </h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0aviT5vu1k_Ga5wI0Tfb5lidxYcrG816EJU7GWUvMj-wKkcOIGxdig7OyvZYE--0PiJlQRHvm8BlLW4OvWgiyX4Lo3zD09xKytckNTYP&s=10" alt="Cardinals" style="border:2px solid black;">
+<h1> Common Birds.. </h1>
+<div class="gallery">
+<div class="gallery-item">
+<a target="_blank" href="#">
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0aviT5vu1k_Ga5wI0Tfb5lidxYcrG816EJU7GWUvMj-wKkcOIGxdig7OyvZYE--0PiJlQRHvm8BlLW4OvWgiyX4Lo3zD09xKytckNTYP&s=10" alt="Chirp" width="600" height="400">
+</a>
+<div class="desc"> <b>Northern Cardinal (Cardinalis cardinalis)</b></div>
+<div class="desc"> The northern cardinal (Cardinalis cardinalis) is a medium-sized bird that is recognizable for its vibrant red colors and its songs.
+</div>
+</div>
+<div class="gallery-item">
+<a target="_blank" href="#">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYVP8jrOWNUc8w--e084TY9jE0GETM4MNdvK_Fh9Xrigb_YRJtkNesG3cORGECygu9BywvcTYDpTBuRG_Sbat0EgxC6Yz73sFjSeI81Y&s=10" alt="Robin" width="200" height="300">
+</a>
+<div class="desc"> <b>American Robin (Turdus migratorius)</b>
+</div>
+<div class="desc"> A spring icon, the American robin (Turdus migratorius) is a medium-sized bird that features a familiar tune and orange belly. 
+</div>
+</div>
+<div class="gallery-item">
+<a target="_blank" href="#">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09k9PJ1zUMhSIw7SJ2bh57KIV1UQqRHZDSIba4uEaxw&s=10" alt = "Goose" width="200" height="400">
+</a>
+<div class="desc"> <b> Canada Goose(Branta canadensis)</b>
+</div>
+<div class="desc"> Usually seen in flocks, Canada goose (Branta canadensis) is a large bird that is quite aggressive and common to spot in parks. </div>
+</div>
 <!-- Relative - your own image; Absolute - pre-existing> </!-->
-<p style="color:white;"> <b> Cardinals </b> </p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYVP8jrOWNUc8w--e084TY9jE0GETM4MNdvK_Fh9Xrigb_YRJtkNesG3cORGECygu9BywvcTYDpTBuRG_Sbat0EgxC6Yz73sFjSeI81Y&s=10" alt="Robin" style="border:3px solid slateblue;width:50%;height:50%">
-<p style="color:white;"> <b> Robin </b> </p> 
 </body>
 </html>
 <!--Hi, this is a comment! This won't affect the current code...>
