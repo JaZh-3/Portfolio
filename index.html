@@ -26,9 +26,19 @@ ul.topnav li a:hover {
 background-color: #000000;
 color: white;
 }
+div.flex-container {
+display: flex;
+flex-direction: column;
+}
+div.flex-container > div {
+border: 1px solid black;
+background-color: #ffffff;
+}
+div.flex-container > div:hover {
+border: 1px solid #ffffff
+}
 div.gallery {
 display: flex;
-flex-wrap: wrap;
 justify-content: flex-start;
 }
 div.gallery-item {
@@ -56,9 +66,12 @@ background-color: tomato;
  background-size: cover;
  } 
  p {
- font-family: Arial;
- background-color: white;
- color: black;
+ background-color: #ffffffaa;
+ color: #222222;
+ }
+ h2 {
+ background-color: #ffffffbb;
+ color: #000000;
  }
  </style>
 </head>
@@ -69,20 +82,34 @@ background-color: tomato;
 <ul class="topnav">
 <li> <a href="#"> Home </a></li>
 <li> <a href="#"> Birds </a></li>
-<li> <a href="about.html"> About </a></li>
+<li> <a href="#"> About </a></li>
 </ul>
-<h1> Common Birds.. </h1>
+<div class="flex-container">
+<div style="background-image: url('https://travisaudubon.org/home/wp-content/uploads/2024/07/blue-jay-1.jpg');background-position:center;background-attachment:scroll;">
+<a href="#">
+<h2> Native Birds </h2>
+<p> Explore the species of birds that are native to this province. </p>
+</a>
+</div>
+<div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDIU_6Em7aFgUA53Oc9hC9Q6mC0n1I2kd2PxOWLMvEpHMfldrRgYDDAOP&s=10');background-attachment:scroll;background-position:center left;">
+<a href="#">
+<h2> Non-Native Birds </h2>
+<p> Find out about birds that were introduced, or invasive to this province. </p>
+</a>
+</div>
+</div>
+<h1 style="background-color: #ffffffaa;"> Common Birds.. </h1>
 <div class="gallery">
 <div class="gallery-item">
-<a target="_blank" href="#">
-<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0aviT5vu1k_Ga5wI0Tfb5lidxYcrG816EJU7GWUvMj-wKkcOIGxdig7OyvZYE--0PiJlQRHvm8BlLW4OvWgiyX4Lo3zD09xKytckNTYP&s=10" alt="Chirp" width="600" height="400">
+<a href="https://www.wikipedia.org/wiki/Northern_cardinal">
+<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0aviT5vu1k_Ga5wI0Tfb5lidxYcrG816EJU7GWUvMj-wKkcOIGxdig7OyvZYE--0PiJlQRHvm8BlLW4OvWgiyX4Lo3zD09xKytckNTYP&s=10" alt="Cardinal" width="600" height="400">
 </a>
 <div class="desc"> <b>Northern Cardinal (Cardinalis cardinalis)</b></div>
 <div class="desc"> The northern cardinal (Cardinalis cardinalis) is a medium-sized bird that is recognizable for its vibrant red colors and its songs.
 </div>
 </div>
 <div class="gallery-item">
-<a target="_blank" href="#">
+<a href="https://www.wikipedia.org/wiki/American_robin">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYVP8jrOWNUc8w--e084TY9jE0GETM4MNdvK_Fh9Xrigb_YRJtkNesG3cORGECygu9BywvcTYDpTBuRG_Sbat0EgxC6Yz73sFjSeI81Y&s=10" alt="Robin" width="200" height="300">
 </a>
 <div class="desc"> <b>American Robin (Turdus migratorius)</b>
@@ -91,12 +118,22 @@ background-color: tomato;
 </div>
 </div>
 <div class="gallery-item">
-<a target="_blank" href="#">
+<a href="https://www.wikipedia.org/wiki/Canada_goose">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09k9PJ1zUMhSIw7SJ2bh57KIV1UQqRHZDSIba4uEaxw&s=10" alt = "Goose" width="200" height="400">
 </a>
 <div class="desc"> <b> Canada Goose(Branta canadensis)</b>
 </div>
-<div class="desc"> Usually seen in flocks, Canada goose (Branta canadensis) is a large bird that is quite aggressive and common to spot in parks. </div>
+<div class="desc"> Usually seen in flocks, Canada goose (Branta canadensis) is a large bird that is quite aggressive and common to spot in parks. 
+</div>
+</div>
+<div class="gallery-item">
+<a ref="https://www.wikipedia.org/wiki/Mourning_dove">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdvvfueU7CwGMfjMwZAu5mf-_GpIJ2EkbaGKauEzzRQ&s=10" alt="Dove" width="200" height="400">
+</a>
+<div class="desc"> <b> Mourning dove (Zenaida macroura)</b>
+</div>
+<div class="desc"> The mourning dove (Zenaida macroura), a member of the pigeon family, is well known for its familiar song, consisting of coos.
+</div>
 </div>
 <!-- Relative - your own image; Absolute - pre-existing> </!-->
 </body>
